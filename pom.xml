@@ -23,7 +23,7 @@
         <url>https://git.cgm.ag/${cgm-life.bundle.name}.git</url>
         <tag>HEAD</tag>
     </scm>
-test
+
     <distributionManagement>
         <snapshotRepository>
             <id>cg.snapshotsm3</id>
