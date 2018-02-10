@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 
 @RunWith(SerenityRunner.class)
-public class ProductCategories {
+public class TestProductCategories {
 
     @Steps
     NavigatingUser mark;
