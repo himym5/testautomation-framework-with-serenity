@@ -4,7 +4,9 @@ import com.cgm.life.testWithSerenitybdd.ui.CategoryNavigationBar;
 import com.cgm.life.testWithSerenitybdd.ui.CurrentPage;
 import com.cgm.life.testWithSerenitybdd.ui.EbayHomePage;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertThat;
+
 
 public class NavigatingUser {
 
@@ -20,7 +22,7 @@ public class NavigatingUser {
 
     public void shouldSeePageTitleContaining(String expectedTitle){
 
-        assertThat(currentPage.getTitle()).containsIgnoringCase(expectedTitle);
+        assertThat(currentPage.getTitle(), is(expectedTitle));
 
     }
 

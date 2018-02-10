@@ -7,7 +7,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 
 @RunWith(SerenityRunner.class)
@@ -28,6 +28,7 @@ public class TestProductCategories {
         mark.navigatesToCategory(Category.Motors);
 
         //Then
-        mark.shouldSeePageTitleContaining("New & used Cars");
+        mark.shouldSeePageTitleContaining("Auto Parts & Accessories, Tires & Wheels | Repair Manuals | " +
+                "New & Used Cars, Trucks, RVs & Motorcycles | eBay Auto Parts and Vehicles");
     }
 }
